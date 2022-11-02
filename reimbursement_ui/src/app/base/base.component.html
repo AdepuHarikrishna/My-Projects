@@ -1,0 +1,30 @@
+
+<div id="page">
+	<header>
+	    <h2> Employee Reimbursement System </h2>
+	    <div>
+	    	 <a (click)="logout()"> LOG OUT </a> 
+	    </div>
+	</header>
+	<hr>
+	<main>
+	   <div class="menu" *ngIf="loggedInUserRole == 'employee'">
+	   	  <a routerLink="empHome"> Home </a>
+	      <a routerLink="applyReim"> Apply Reimbursement </a>
+	      <a routerLink="viewReim"> My Reimbursements </a>
+	      <a routerLink="viewProfile"> View Profile </a>
+	   </div>
+	   <div class="menu" *ngIf="loggedInUserRole == 'manager'">
+          <a routerLink="mgrHome"> Home </a>
+		  <a routerLink="resolve"> Resolve Reimbursements </a>
+		  <a routerLink="viewAll"> View Reimbursements </a>
+	   </div>
+	   <div id="content">
+	       <router-outlet> </router-outlet>  
+	      <!-- <ng-content></ng-content> -->
+	   </div>
+	</main>
+	<footer>
+	   CopyRights &copy; Reserved
+	</footer>
+</div>

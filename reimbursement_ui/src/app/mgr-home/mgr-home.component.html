@@ -1,0 +1,10 @@
+  
+  <h2> Welcome to Manager view of the application </h2>
+<hr style="background-color:black" />  
+<div class="row">  
+  <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">  
+    <div ngxSlickItem *ngFor="let image of images" class="slide" style="text-align:center">  
+      <img src="{{ image.img }}" width="40%" height="40%">  
+    </div>  
+  </ngx-slick-carousel>  
+</div>

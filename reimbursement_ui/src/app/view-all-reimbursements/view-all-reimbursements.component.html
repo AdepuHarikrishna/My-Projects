@@ -1,0 +1,31 @@
+<p>view-all-reimbursements works!</p>
+
+<br>
+
+<select [(ngModel)]="selectedUserName" (change)="filterTable()" placeholder="Status">
+   <option *ngFor="let uName of allUserNames"> {{uName}} </option>
+</select>
+&nbsp;&nbsp;&nbsp;
+<select [(ngModel)]="statusSelected" (change)="filterTable()" placeholder="Status" >
+   <option>ALL</option>
+   <option>PENDING</option>
+   <option>ACCEPT</option>
+   <option>DENY</option>
+</select>
+<br>
+<table>
+   <thead>
+   	 <tr>
+   	 	 <th> reimId </th><th> Reason </th> <th> Amount </th>
+   	 	 <th> Status </th><th> RaisedOn </th> <th> UserName </th>
+   	 </tr>
+   </thead>
+   <tbody>
+   	  <tr *ngFor="let rObj of allReimbursements">
+   	  	 <td> {{rObj.reimbursementId}} </td><td> {{rObj.reason}} </td>
+   	  	 <td> {{rObj.amount}} </td><td> {{rObj.status}} </td>
+   	  	 <td> {{rObj.raisedOn | date}} </td> <td> {{rObj.userName}} </td>
+   	  </tr>
+   </tbody>
+</table>
+   

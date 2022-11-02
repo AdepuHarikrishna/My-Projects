@@ -1,0 +1,18 @@
+div{
+	text-align: center;
+	margin-top:10px;
+}
+div input{
+	color:white;
+	width:30%;
+	margin-left:20px;
+}
+div label{
+	font-weight: bold;
+}
+table, tr, td, th{
+	border:0px;
+}
+input{
+	
+}

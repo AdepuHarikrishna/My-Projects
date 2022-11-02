@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	padding:0px;
+	margin:0px;
+}
+
+input {
+	width:40%;
+	padding:7px;
+	border-radius: 8px;
+	text-align: center;
+	font-size:17px;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+button,select{
+	width:15%;
+	text-align: center;
+	padding:9px;
+	border-radius: 8px;
+	font-size:18px;
+	font-weight: bold;
+	background-color: yellowgreen;
+}
+
+table{
+	width:60%;
+	margin:auto;
+}
+
+table, tr, td, th{
+	border:2px solid blue;
+	border-collapse: collapse;
+}
+td, th{
+	padding:8px;
+	text-align:center;
+}
+
+table thead{
+	background-color: #e05555;
+}
+
+tbody tr {
+	background-color: #2fa9a5;
+	color:white;
+}

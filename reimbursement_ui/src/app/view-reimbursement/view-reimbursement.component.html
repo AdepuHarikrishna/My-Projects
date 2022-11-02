@@ -1,0 +1,25 @@
+
+<br><br>
+
+<select [(ngModel)]="statusSelected" (change)="filterTable()" >
+   <option>ALL</option>
+   <option>PENDING</option>
+   <option>ACCEPT</option>
+   <option>DENY</option>
+</select>
+
+<table>
+   <thead>
+   	 <tr>
+   	 	 <th> reimId </th><th> Reason </th> <th> Amount </th>
+   	 	 <th> Status </th><th> RaisedOn </th>
+   	 </tr>
+   </thead>
+   <tbody>
+   	  <tr *ngFor="let rObj of allReimbursements">
+   	  	 <td> {{rObj.reimbursementId}} </td><td> {{rObj.reason}} </td>
+   	  	 <td> {{rObj.amount}} </td><td> {{rObj.status}} </td>
+   	  	 <td> {{rObj.raisedOn | date}} </td>
+   	  </tr>
+   </tbody>
+</table>

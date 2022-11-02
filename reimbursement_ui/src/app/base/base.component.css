@@ -1,0 +1,64 @@
+
+#page{
+	height:500px;
+}
+
+header {
+	height:10%;
+	background-color: #30dfd4;
+	color:#0e8e4b;
+}
+
+header h2 {
+	text-align: center;	
+	padding-top:10px;
+	width:70%;
+	text-align: left;
+	float:left;
+	margin-top:0px;
+	padding-top:5px;
+    padding-left:40px;
+}
+header div{
+	width:20%;
+	float:right;
+	padding-top:10px;
+}
+
+main{
+	height:90%;
+	/*background-image:url('../../assets/ERS-background.jpg');*/
+	background-color: #24727C;
+	color:white;
+}
+
+.menu {
+   width:15%;
+   height:450px;
+   float:left;
+   padding-left:1%;
+   border-right:2px solid red;
+}
+
+.menu a {
+	display: block;
+	padding:20px;
+	color:white;
+}
+.menu a:hover{
+	background-color: yellow;
+}
+
+#content {
+   width:78%;
+   float:right;
+   padding-right:2%;
+}
+
+footer{
+	height:5%;
+	text-align: center;
+	background-color: #dd9c2d;
+	padding-top:5px;
+}
+
